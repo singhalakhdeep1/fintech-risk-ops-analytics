@@ -1,0 +1,30 @@
+{
+  "transaction_success_rate": 0.75,
+  "failure_rate": 0.25,
+  "fraud_rate": 0.25,
+  "chargeback_rate": 0.25,
+  "total_transactions": 4,
+  "regional_breakdown": {
+    "IN": {
+      "total": 2,
+      "succeeded": 2,
+      "failed": 0,
+      "fraud": 0,
+      "chargebacks": 1
+    },
+    "US": {
+      "total": 1,
+      "succeeded": 0,
+      "failed": 1,
+      "fraud": 0,
+      "chargebacks": 0
+    },
+    "GB": {
+      "total": 1,
+      "succeeded": 1,
+      "failed": 0,
+      "fraud": 1,
+      "chargebacks": 0
+    }
+  }
+}

@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fintech-risk-ops-analytics-worker-canary
+  namespace: prod
+  labels:
+    app: fintech-risk-ops-analytics-worker
+    track: canary
+    version: canary
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fintech-risk-ops-analytics-worker
+      track: canary
+  template:
+    metadata:
+      labels:
+        app: fintech-risk-ops-analytics-worker
+        track: canary
+        version: canary
+    spec:
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 1000
+      containers:
+        - name: worker
+          image: ghcr.io/alakhdeepsingh/fintech-risk-ops-analytics:canary
+          command: ["python", "analysis/run_local_demo.py"]
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+            limits:
+              cpu: "500m"
+              memory: "256Mi"
+          env:
+            - name: ENV
+              value: "canary"
+            - name: LOG_LEVEL
+              value: "DEBUG"

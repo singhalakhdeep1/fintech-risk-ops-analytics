@@ -1,0 +1,7 @@
+{
+    "project": "fintech-risk-ops-analytics",
+    "type": "throughput",
+    "thresholds": {
+        "kpi_runs_per_sec_min": 5000
+    }
+}

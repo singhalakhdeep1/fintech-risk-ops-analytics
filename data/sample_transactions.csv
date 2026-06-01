@@ -1,0 +1,5 @@
+transaction_id,user_id,amount,status,fraud_flag,chargeback_flag,region,occurred_at
+t_1,u_10,2400,succeeded,false,false,IN,2026-06-01T10:00:00Z
+t_2,u_11,900,failed,false,false,US,2026-06-01T10:02:00Z
+t_3,u_12,6400,succeeded,true,false,GB,2026-06-01T10:04:00Z
+t_4,u_13,1200,succeeded,false,true,IN,2026-06-01T10:08:00Z

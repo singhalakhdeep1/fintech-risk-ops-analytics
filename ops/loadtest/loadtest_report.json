@@ -1,0 +1,7 @@
+{
+  "workload": "kpi_compute",
+  "iterations": 20000,
+  "rows_per_iteration": 3,
+  "duration_sec": 0.55,
+  "kpi_runs_per_sec": 36183.44
+}

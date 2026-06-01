@@ -1,0 +1,17 @@
+groups:
+  - name: fintech-risk-ops-alerts
+    rules:
+      - alert: FraudRateSpike
+        expr: max(fraud_rate{job="fintech-risk-ops-analytics"}) > 0.05
+        for: 15m
+        labels:
+          severity: critical
+        annotations:
+          summary: Fraud rate exceeded threshold
+      - alert: PaymentSuccessDrop
+        expr: min(payment_success_rate{job="fintech-risk-ops-analytics"}) < 0.92
+        for: 15m
+        labels:
+          severity: warning
+        annotations:
+          summary: Payment success rate dropped below SLO

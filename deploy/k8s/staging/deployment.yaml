@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fintech-risk-ops-analytics-worker
+  namespace: staging
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: fintech-risk-ops-analytics-worker
+  template:
+    metadata:
+      labels:
+        app: fintech-risk-ops-analytics-worker
+    spec:
+      containers:
+        - name: worker
+          image: ghcr.io/alakhdeepsingh/fintech-risk-ops-analytics:staging
+          command: ["python", "analysis/run_local_demo.py"]

@@ -58,3 +58,9 @@ Output file:
 cd analysis
 python -m unittest discover -s . -p "test_*.py"
 ```
+
+---
+
+## License
+
+Proprietary - All rights reserved.

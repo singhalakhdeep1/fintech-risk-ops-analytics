@@ -1,29 +1,78 @@
 {
-  "transaction_success_rate": 0.75,
-  "failure_rate": 0.25,
-  "fraud_rate": 0.25,
-  "chargeback_rate": 0.25,
-  "total_transactions": 4,
+  "transaction_success_rate": 0.705,
+  "failure_rate": 0.18,
+  "fraud_rate": 0.025,
+  "chargeback_rate": 0.0033,
+  "total_transactions": 600,
   "regional_breakdown": {
     "IN": {
-      "total": 2,
-      "succeeded": 2,
-      "failed": 0,
-      "fraud": 0,
-      "chargebacks": 1
+      "total": 63,
+      "succeeded": 45,
+      "failed": 15,
+      "fraud": 1,
+      "chargebacks": 0
     },
-    "US": {
-      "total": 1,
-      "succeeded": 0,
-      "failed": 1,
+    "DE": {
+      "total": 53,
+      "succeeded": 34,
+      "failed": 10,
       "fraud": 0,
       "chargebacks": 0
     },
+    "CA": {
+      "total": 62,
+      "succeeded": 44,
+      "failed": 10,
+      "fraud": 2,
+      "chargebacks": 0
+    },
     "GB": {
-      "total": 1,
-      "succeeded": 1,
-      "failed": 0,
+      "total": 61,
+      "succeeded": 41,
+      "failed": 14,
+      "fraud": 3,
+      "chargebacks": 0
+    },
+    "US": {
+      "total": 49,
+      "succeeded": 34,
+      "failed": 8,
+      "fraud": 0,
+      "chargebacks": 0
+    },
+    "AU": {
+      "total": 64,
+      "succeeded": 42,
+      "failed": 11,
+      "fraud": 3,
+      "chargebacks": 0
+    },
+    "BR": {
+      "total": 65,
+      "succeeded": 48,
+      "failed": 7,
       "fraud": 1,
+      "chargebacks": 0
+    },
+    "SG": {
+      "total": 50,
+      "succeeded": 34,
+      "failed": 11,
+      "fraud": 1,
+      "chargebacks": 2
+    },
+    "JP": {
+      "total": 58,
+      "succeeded": 44,
+      "failed": 10,
+      "fraud": 2,
+      "chargebacks": 0
+    },
+    "FR": {
+      "total": 75,
+      "succeeded": 57,
+      "failed": 12,
+      "fraud": 2,
       "chargebacks": 0
     }
   }
